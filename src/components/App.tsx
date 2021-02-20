@@ -13,7 +13,7 @@ const componentContent: Content = {
   reference:
     "https://medium.com/@dahvinchee/how-to-set-up-a-react-typescript-project-from-scratch-with-babel-and-webpack-6b069881229d",
   refDesc:
-    "There are lots of articles with good explanations and much longer tsconfig.json (like this one)",
+    " are lots of articles with good explanations and much longer tsconfig.json (like this one)",
 };
 
 const App: React.FC = () => {
@@ -23,10 +23,15 @@ const App: React.FC = () => {
       <h1>{componentContent.h1}</h1>
       <p>{componentContent.text}</p>
       <div className="content">
-        <a href={componentContent.reference}>{componentContent.refDesc}</a>
+        <a href={componentContent.reference}>
+          {componentContent.refDesc}
+        </a>
         <div>
-          Or, just run `tsc --init` after `npm install typescript`.
-          <p>You will have to look up any configurations though.</p>
+          Or, just run `tsc --init` after `npm install
+          typescript`.
+          <p>
+            You will have to look up any configurations though.
+          </p>
         </div>
       </div>
     </div>
