@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: $default-font-size;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Lato, sans-serif;
+  line-height: 1.7rem;
+}
