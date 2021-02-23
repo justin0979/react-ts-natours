@@ -3,11 +3,14 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { merge } = require("webpack-merge");
 const commonConfig = require("./webpack.common");
 
+const ASSET_PATH = process.env.ASSET_PATH || "/";
+
 module.exports = merge(commonConfig, {
   entry: ["./src/index", "./public/index.html"],
   output: {
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "../dist"),
-    publicPath: "",
+    publicPath: ASSET_PATH,
   },
   mode: "development",
   devtool: "inline-source-map",
