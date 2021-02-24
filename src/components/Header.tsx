@@ -19,7 +19,11 @@ export default () => {
             is where life happens
           </span>
         </h1>
-        <Button href="#" class="btn btn-white">
+        <Button
+          href="#"
+          type="primary"
+          class="btn btn-white btn-animated"
+        >
           Discover our tours
         </Button>
       </div>
