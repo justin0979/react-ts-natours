@@ -1,3 +1,5 @@
+import Button from "&components/Button";
+
 export default () => {
   return (
     <header className="header">
@@ -17,6 +19,9 @@ export default () => {
             is where life happens
           </span>
         </h1>
+        <Button href="#" class="btn btn-white">
+          Discover our tours
+        </Button>
       </div>
     </header>
   );
