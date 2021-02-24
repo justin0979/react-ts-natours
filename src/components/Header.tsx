@@ -1,3 +1,5 @@
+import Button from "&components/Button";
+
 export default () => {
   return (
     <header className="header">
@@ -17,6 +19,13 @@ export default () => {
             is where life happens
           </span>
         </h1>
+        <Button
+          href="#"
+          type="primary"
+          class="btn btn-white btn-animated"
+        >
+          Discover our tours
+        </Button>
       </div>
     </header>
   );
