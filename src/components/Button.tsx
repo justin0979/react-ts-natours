@@ -1,5 +1,5 @@
 interface ButtonProps {
-  type: string;
+  type?: string;
   class: string;
   href: string;
   children: React.ReactNode;

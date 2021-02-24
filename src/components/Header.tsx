@@ -2,7 +2,7 @@ import Button from "&components/Button";
 
 export default () => {
   return (
-    <header className="header">
+    <header id="header" className="header">
       <div className="logo-box">
         <img
           src="/src/img/logo-white.png"
@@ -20,8 +20,7 @@ export default () => {
           </span>
         </h1>
         <Button
-          href="#"
-          type="primary"
+          href="#header"
           class="btn btn-white btn-animated"
         >
           Discover our tours
